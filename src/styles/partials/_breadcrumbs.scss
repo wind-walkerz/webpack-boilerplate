@@ -1,0 +1,19 @@
+.breadcrumbs {
+    display: flex;
+
+    padding: 1.8rem 0;
+
+    &__home {
+        cursor: pointer;
+    }
+
+    &__separator {
+        margin: 0 1rem;
+    }
+
+    &__link {
+        color: $primary_blue;
+        cursor: pointer;
+    }
+}
+

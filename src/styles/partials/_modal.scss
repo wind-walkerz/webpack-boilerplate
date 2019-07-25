@@ -1,0 +1,81 @@
+.modal {
+    &.show {
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &-dialog {
+        width: 57.8rem;
+    }
+
+    &-content {
+        background-color: #F3F3F3;
+    }
+
+    .close {
+        align-self: flex-end;
+        position: absolute;
+
+        margin: 0;
+        padding: 0;
+
+        font-size: 3.8rem;
+    }
+
+    &-header, &-body, &-footer {
+        margin: 0;
+        padding: 1rem 2.9rem;
+        background-color: white;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        border: none;
+    }
+
+
+    &-footer {
+        button {
+            @extend p;
+            margin: 0 0 0 2rem;
+            padding: .6rem 4rem;
+
+            color: white;
+
+            border: none;
+            border-radius: .5rem;
+
+            &.btn-primary {
+                background-color: $primary_aqua;
+            }
+
+            &.btn-light {
+                border: .1rem solid #D1D1D1;
+                color: $primary_black;
+            }
+        }
+
+        &--borderless {
+            border: none;
+        }
+    }
+
+    &-title {
+        @extend h2;
+
+        &--highlighted {
+            color: $primary_blue;
+        }
+    }
+
+    .author__name {
+        @extend h6;
+
+        font-style: italic;
+    }
+}

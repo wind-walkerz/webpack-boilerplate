@@ -1,0 +1,19 @@
+.form {
+    &__group {
+        display: flex;
+    }
+
+    &__control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,112 @@
+.datatable {
+    width: 100%;
+
+    margin: 2rem 0;
+
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2);
+
+
+    &__cell {
+        display: inline-flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+
+        &:not(:first-child):not(:last-child), &:last-child {
+            border-left: .1rem solid #D8D8D8;
+        }
+    }
+
+    &__row {
+        display: flex;
+        background-color: transparent;
+
+        &:nth-child(odd) {
+            background-color: white;
+        }
+    }
+
+    &__head {
+        .datatable__row {
+            background-color: #E4E4E4;
+        }
+
+        .datatable__cell {
+            @extend h3;
+            padding: 1rem 0;
+            justify-content: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem;
+        padding: .2rem 1rem;
+    }
+
+    &__pager {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 10rem 0;
+    }
+
+    &__pager-info {
+
+    }
+
+    &__pager-nav {
+        margin-top: 2rem;
+
+        .paginationjs-prev, .paginationjs-next {
+            border: none !important;
+
+            a {
+                background-color: transparent !important;
+            }
+
+            &.disabled a {
+                background-color: #F5F5F5 !important;
+            }
+
+            &:hover a {
+                background-color: white !important;
+            }
+        }
+
+        .paginationjs-page {
+            margin: 0 .2rem;
+
+            border: none !important;
+
+            a {
+                background-color: #EEEEEE !important;
+            }
+
+            &.active a {
+                background-color: $primary_blue !important;
+            }
+        }
+    }
+
+    &__filter {
+
+    }
+
+    &__search {
+        .form__control {
+
+            padding: .5rem 1.5rem;
+
+            border: .1rem solid $primary_gray;
+
+            border-radius: 2rem;
+
+            background-color: white;
+        }
+    }
+}

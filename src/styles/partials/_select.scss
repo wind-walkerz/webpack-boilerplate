@@ -1,0 +1,26 @@
+.select2  {
+    width: 100% !important;
+    .select2-selection {
+
+        &--multiple {
+            display: flex;
+            align-items: center;
+
+            border-color: $primary_gray!important;
+            background-color: white;
+
+            border-radius: 10rem!important;
+
+            color: $primary_black;
+            font-size: 1.4rem;
+            .select2-selection__choice {
+                margin: 0 .5rem 0 0;
+                border-radius: 10rem;
+            }
+        }
+    }
+
+    &.square {
+
+    }
+}

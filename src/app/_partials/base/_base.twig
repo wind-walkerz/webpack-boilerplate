@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Webpack Boilerplate</title>
+</head>
+
+<body>
+{% include "../header/_header.twig" with {header: block('header')} %}
+
+{% block content %}
+
+{% endblock %}
+
+{% include "../footer/_footer.twig" with {footer: block('footer')} %}
+</body>
+
+</html>

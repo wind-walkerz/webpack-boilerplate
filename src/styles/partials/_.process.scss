@@ -1,0 +1,13 @@
+.progress {
+    height: 1.7rem;
+    border-radius: 10rem;
+    &-bar {
+        background-color: #489DFF;
+        border-radius: 10rem;
+    }
+    &-label {
+        &.complete {
+            color: $primary_blue;
+        }
+    }
+}

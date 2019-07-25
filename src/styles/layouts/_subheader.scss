@@ -1,0 +1,9 @@
+.subheader {
+    background-color: #E8E8E8;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

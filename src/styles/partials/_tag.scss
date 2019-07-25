@@ -1,0 +1,17 @@
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: .6rem 1rem;
+
+    border: .1rem solid #979797;
+    border-radius: 3rem;
+
+    &__country-flag {
+        display: flex;
+        width: 1.7rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
+}
