@@ -21,6 +21,6 @@ module.exports = merge(common, {
     hints: false
   },
   plugins: [
-    // new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin()
   ]
 })
